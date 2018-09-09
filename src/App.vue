@@ -11,8 +11,11 @@
         <tab name="Vue state">
           <vue-state></vue-state>  
         </tab>
-        <tab name="Third tab">
-          third          
+        <tab name="Simple Vuex">
+          <simple-vuex></simple-vuex>          
+        </tab>
+        <tab name="Functional Redux">
+          <redux-like></redux-like>
         </tab>
     </tabs>
 </div>  
@@ -23,13 +26,17 @@
 import PassArgument from './components/PassArgument';
 import GlobalState from './components/GlobalState';
 import VueState from './components/VueState';
+import SimpleVuex from './components/SimpleVuex';
+import ReduxLike from './components/ReduxLike';
 
 export default {
   name: 'app',
   components: {
     PassArgument,
     GlobalState,
-    VueState
+    VueState,
+    SimpleVuex,
+    ReduxLike
   }      
 }
 </script>
